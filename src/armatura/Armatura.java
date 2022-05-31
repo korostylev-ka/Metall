@@ -8,4 +8,10 @@ public class Armatura {
         this.diametr = diametr;
         this.weight = weight;
     }
+    public String toString() {
+        return "Арматура " + diametr;
+    }
+    public Double toCalcWeight(int l) { //метод расчета массы по длине
+        return weight * l;
+    }
 }
